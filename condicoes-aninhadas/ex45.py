@@ -17,3 +17,4 @@ elif escolha > 3:
     print('Não disponivel. Escolha dentre as opções listadas acima')
 else: 
     print('Você perdeu')
+
