@@ -4,13 +4,15 @@ No final, mostre quantas pessoas ainda não atingiram a maioridade e
 quantas ja são maiores (21 anos)
 """
 
-for nas in range(0,3):
-    n = int(input('Digite o ano de nascimento: '))
-    maior = 2021 - n
-if maior >= 21:
-    m = 'Maior'
-    print("{} são maiores de idade".format(m.count('Maior')))
-else:
-    n = 'Menor'
-    print('{} são menores de idade'.format(n.count('Menor')))
-
+from datetime import date
+atual = date.today().year
+maioridade = 0
+menoridade = 0
+for nas in range(1,8):
+    nasc = int(input('Digite o ano de nascimento da {}ª pessoa: '.format(nas)))
+    idade = atual - nasc
+    if idade >= 21:
+        maioridade = maioridade + 1
+    else:
+        menoridade = menoridade + 1
+print('Ao todo tivemos {} maiores de idade e\n{} pessoas menores de idade'.format(maioridade, menoridade))
