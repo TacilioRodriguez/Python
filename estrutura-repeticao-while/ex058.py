@@ -1,6 +1,6 @@
 """
 Melhore o jogo do Desafio 028 (adivinhar um numero) onde o computador vai 'pensar' em um numero de 0 e 10.
-Só que agora o jogador vai tentar adivinhar até acertar, mostrando no final quandos palpites
+Só que agora o jogador vai tentar adivinhar até acertar, mostrando no final quantos palpites
 foram necessários para vencer.
 """
 
@@ -15,9 +15,10 @@ foram necessários para vencer.
 # print('Acertou. Você tentou {} vezes para acertar'.format(c))
 
 from random import randint
-computador = randint(0,10)
+computador = randint(0, 10)
 acertou = False
 palpites = 0
+print('Pensei em um numero, consegue adivinhar ?')
 while not acertou:
     jogador = int(input('Digite seu palpite: '))
     palpites = palpites + 1
