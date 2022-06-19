@@ -23,12 +23,3 @@ while cont < 12:
     else:
         at_goal()
 
-
-
-# Ou pode ser utilizado da seguinte forma
-
-while not at_goal():
-    if wall_in_front() == True:
-        salto()
-    else:
-        move()
