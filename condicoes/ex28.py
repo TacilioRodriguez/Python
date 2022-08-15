@@ -12,3 +12,4 @@ elif digite >5:
     print("O Numero digitado é maior do que 5. Não é permitido")
 else:
     print('Você não acertou. Tente novamente')
+
