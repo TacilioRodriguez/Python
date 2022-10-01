@@ -1,19 +1,8 @@
-# def greet():
-#     print('Teste')
-#     print('Teste')
-#     print('Teste')
-#
-#
-# def monstre_nome(nome):
-#     print(f'Olá {nome}')
-#     print(f'Como voce vai {nome} ?')
-#
-#
-# monstre_nome('Tacilio')
 
+localizacao = 'São Paulo'
+nome_pessoa = 'Tacilio'
 def nome_local(nome, local):
-    print(f'Olá {nome}')
-    print(f'Seja bem vindo a {local}')
+    print(f'Seu nome é {nome}')
+    print(f'E voce mora em {local}')
 
-
-nome_local('Tacilio', 'São Paulo')
+nome_local(nome=nome_pessoa, local=localizacao)
