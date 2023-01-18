@@ -6,3 +6,4 @@ def nome_local(nome, local):
     print(f'E voce mora em {local}')
 
 nome_local(nome=nome_pessoa, local=localizacao)
+
