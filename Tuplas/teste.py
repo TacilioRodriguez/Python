@@ -1,6 +1,6 @@
 
 
-nomes = ('Laranja', 'Teto', 'araraquara')
+nomes = ('Laranja', 'Teto', 'Araraquara')
 
 for item in nomes:
     print(f'\nA palavra {item} tem: ', end=' ')
