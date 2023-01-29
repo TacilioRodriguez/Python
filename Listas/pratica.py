@@ -1,39 +1,57 @@
-# valores = [1, 10, 2, 10]
-# # for item in range(0, 5):
-# #     numeros = int(input('Digite um numero: '))
+##78
+# valores = []
+# maior = []
+# menor = []
+# for item in range(0, 5):
+#     valores.append(int(input(f'Digite um numero para a Posição {item}: ')))
+#     if item == 0:
+#         maior = menor = valores[item]
+#     else:
+#         if valores[item] > maior:
+#             maior = valores[item]
+#         if valores[item] < menor:
+#             menor = valores[item]
 #
-# pos = []
-# for x in valores:
-#     if valores.count(x) > 1:
-#         pos.append(x)
-#
-# print(pos)
+# print('=-' * 30)
+# print(f'Os valores digitados foram {valores}')
+# print(f'O maior valor foi {maior} nas posições ', end='')
+# for indice, valor in enumerate(valores):
+#     if valor == maior:
+#         print(f'{indice} | ', end='')
+# print()
+# print(f'O menor valor foi {menor} nas posições ', end='')
+# for indice, valor in enumerate(valores):
+#     if valor == menor:
+#         print(f'{indice} | ', end='')
+
+
 # print(f'O Maior valor foi {max(valores)} e esta na posição {valores.index(max(valores))}')
 # print(f'O Menor valor foi {min(valores)} e esta na posição {valores.index(min(valores))}')
 
 # --===============================================---=================================================
-
+##79
 # numeros = []
-# resp = 's'
-# while resp == 's':
-#     dig = int(input('Digite um Valore: '))
+# while True:
+#     dig = int(input('Digite um Valor: '))
 #     if dig in numeros:
-#         print('Valor Duplicado, não vou adicionar...')
+#         print('Valor Duplicado! Não vou adicionar...')
 #     else:
 #         numeros.append(dig)
 #         print('Valor Adicionado com Sucesso...')
 #
 #     resp = str(input('Quer continuar? [S/N] ')).lower()
-#
+#     if resp == 'n':
+#         break
+# print('=-' * 30)
 # print(f'Você digitou os valores {sorted(numeros)}')
 
 # --===============================================---=================================================
-
-# from bisect import insort
-# lista = []
-# for item in range(5):
-#     insort(lista, int(input('Digite o número: ')))
-# print(lista)
+##80
+from bisect import insort
+lista = []
+for item in range(5):
+    insort(lista, int(input('Digite o número: ')))
+print(lista)
 
 # --===============================================---=================================================
 ## 81
@@ -80,20 +98,20 @@
 # --===============================================---=================================================
 
 ##83
-
-expres = list(input('Digite uma expressão: '))
-cont = 0
-for item in expres:
-    if item == '(':
-        cont += 1
-    elif item == ')':
-        cont += 1
-
-print(cont)
-if cont % 2 == 0:
-    print('Expressão Valida..')
-else:
-    print('Expressão Invalida')
+#
+# expres = list(input('Digite uma expressão: '))
+# cont = 0
+# for item in expres:
+#     if item == '(':
+#         cont += 1
+#     elif item == ')':
+#         cont += 1
+#
+# print(cont)
+# if cont % 2 == 0:
+#     print('Expressão Valida..')
+# else:
+#     print('Expressão Invalida')
 
 
 
