@@ -1,9 +1,8 @@
-
-
-def soma(num1, num2):
-    resp = num1 + num2
-    return resp
-
+def mensagem(msg):
+    print('-' * len(msg))
+    print(msg)
+    print('-' * len(msg))
 
 
 
+mensagem('Ola Tudo bem com vc ?  Eu estou bem')
