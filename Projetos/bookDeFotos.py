@@ -5,7 +5,7 @@ from PIL import Image
 import pandas as pd
 from pptx import Presentation
 from pptx.util import Inches
-
+import win32com.client
 
 diretorio = 'C:/Users/tacilio.pereira/Downloads/bookdeFotos/2_fotos_book'
 
@@ -34,7 +34,7 @@ for i in range(num_linhas):
             erro = sys.exc_info()
             print("Ocorreu um erro:", erro)
 
-print('FIM')
+
 
 # Cria uma apresentação em branco
 ppt = Presentation()
@@ -62,3 +62,22 @@ for imagem in imagens:
     # Fecha a imagem
     img.close()
 
+
+# Cria uma instância do PowerPoint
+powerpoint = win32com.client.Dispatch("Powerpoint.Application")
+
+# Abre um arquivo de apresentação existente
+presentation = powerpoint.Presentations.Open("C:/Users/tacilio.pereira/Downloads/bookdeFotos/2_fotos_book/Apresentação1.pptx")
+
+# Seleciona o primeiro slide
+slide = presentation.Slides(1)
+
+# Insere a primeira imagem no slide
+left1 = Inches(1)
+top1 = Inches(2)
+slide.Shapes.AddPicture(os.path.join(diretorio, foto1), False, True, left1, top1, Inches(4), Inches(4))
+
+# Insere a segunda imagem ao lado da primeira
+left2 = Inches(5)
+top2 = Inches(2)
+slide.Shapes.AddPicture(os.path.join(diretorio, foto2), False, True, left2, top2, Inches(4), Inches(4))
