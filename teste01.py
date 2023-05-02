@@ -1,7 +1,3 @@
-primeiro = input('Primeiro Numero: ')
-segundo = input('Segundo Numero: ')
-soma = int(primeiro) + int(segundo)
-print('A soma é: ', soma)
-
-
-
+a = [1, 2, 3]
+b = a
+a.append(4)
